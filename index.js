@@ -24,9 +24,27 @@ app.get("/todoApi", function (req, res) {
    
     try {
         
-        // console.log(reversed,'resed todo')
+        setTimeout(() => {
+            
+            res.status(200).json(customTasks)
 
-        res.json(customTasks)
+        }, 8000);
+
+    } catch (error) {
+        
+        console.log(error)
+    }
+
+});
+
+app.get("/todo", function (req, res) {
+   
+    try {
+        
+            
+            res.status(200).json(customTasks)
+
+       
 
     } catch (error) {
         

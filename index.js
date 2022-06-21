@@ -20,23 +20,24 @@ const port = 5000;
 let customTasks = [];
 
 // fetching all todo 
-app.get("/todoApi", function (req, res) {
+// app.get("/todoApi", function (req, res) {
    
-    try {
+//     try {
         
-        setTimeout(() => {
+//         setTimeout(() => {
             
-            res.status(200).json(customTasks)
+//             res.status(200).json(customTasks)
 
-        }, 8000);
+//         }, 8000);
 
-    } catch (error) {
+//     } catch (error) {
         
-        console.log(error)
-    }
+//         console.log(error)
+//     }
 
-});
+// });
 
+// fetching all todo 
 app.get("/todo", function (req, res) {
    
     try {
@@ -69,6 +70,7 @@ app.post("/todoApi", function (req, res) {
            isCompleted: false
         
     }
+    console.log(addNewtodo)
     
     if (!text) {
 

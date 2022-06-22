@@ -70,7 +70,6 @@ app.post("/todoApi", function (req, res) {
            isCompleted: false
         
     }
-    console.log(addNewtodo)
     
     if (!text) {
 
